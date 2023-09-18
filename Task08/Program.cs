@@ -5,6 +5,7 @@
 // 8 -> 2, 4, 6, 8
 
 Console.Write("Введите любое целое число больше 1: ");
+
 int number = Convert.ToInt32(Console.ReadLine());
 
 if (number > 1)
