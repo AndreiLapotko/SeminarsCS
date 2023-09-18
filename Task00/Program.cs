@@ -9,4 +9,4 @@ Console.Write("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 int result = number * number;
-Console.WriteLine($"Квадрат Вашего числа равен: {result}");
+Console.WriteLine($"Квадрат {number} равен: {result}");
