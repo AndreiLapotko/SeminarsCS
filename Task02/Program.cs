@@ -7,5 +7,6 @@ int firstNumber = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе любое целое число b: ");
 int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-if (firstNumber > secondNumber) Console.WriteLine($"a = {firstNumber}; b = {secondNumber} -> max = {firstNumber}");
+if (firstNumber == secondNumber) Console.WriteLine($"a = {firstNumber} и b = {secondNumber} равны!");
+else if (firstNumber > secondNumber) Console.WriteLine($"a = {firstNumber}; b = {secondNumber} -> max = {firstNumber}");
 else Console.WriteLine($"a = {firstNumber}; b = {secondNumber} -> max = {secondNumber}");
