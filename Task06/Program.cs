@@ -5,7 +5,7 @@
 // -3 -> нет
 // 7 -> нет
 
-Console.Write("Введите первое любое целое число: ");
+Console.Write("Введите любое целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 // if (number % 2 == 0) Console.WriteLine($"{number} -> да");
