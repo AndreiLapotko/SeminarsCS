@@ -13,8 +13,9 @@ int GetIntUserInput(string str)
         string value = Console.ReadLine();
         num = Convert.ToInt32(value);
         check = IsCorrectRange(num);
-        if (check) break;
-        else Console.WriteLine($"Дня недели с номером {num} не существует!");
+        //if (check) break;
+        //else Console.WriteLine($"Дня недели с номером {num} не существует!");
+        if (!check) Console.WriteLine($"Дня недели с номером {num} не существует!");
     }
     return num;
 }
