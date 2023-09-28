@@ -11,7 +11,7 @@ int GetIntUserInput(string str)
 
 void TableOfSquare(int x)
 {
-    int count = 0;
+    int count = 1;
     while (count <= x)
     {
         Console.WriteLine($"{count, 3} -> {count * count, 5}");
