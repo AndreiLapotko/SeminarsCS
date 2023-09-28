@@ -5,9 +5,6 @@
 // 4 -> 10
 // 8 -> 36
 
-Console.Write("Введите целое положительное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-
 int SumNumbers(int num)
 {
     int sum = 0;
@@ -22,6 +19,9 @@ int SumNumbers(int num)
     }
 return sum;
 }
+
+Console.Write("Введите целое положительное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
 int sumNumbers = SumNumbers(number);
 Console.WriteLine($"Сумма чисел от 1 до {number} равна {sumNumbers}");
