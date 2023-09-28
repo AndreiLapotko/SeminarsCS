@@ -10,7 +10,7 @@ int GetIntUserInput(string str)
     while (!check) //запрос до тех пор пока пользователь не введёт корректные данные
     {
         Console.Write($"{str}: ");
-        string value = Console.ReadLine();
+        string? value = Console.ReadLine();
         num = Convert.ToInt32(value);
         check = IsCorrectRange(num);
         //if (check) break;
