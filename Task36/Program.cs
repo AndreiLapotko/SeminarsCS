@@ -4,7 +4,7 @@
 
 using static System.Console;
 
-int[] CreateArrarRndint(int size, int min, int max)
+int[] CreateArrRndInt(int size, int min, int max)
 {
     int[] arr = new int[size];
     Random rnd = new Random();
@@ -43,7 +43,7 @@ int minValueOfRange = Convert.ToInt32(ReadLine());
 Write("Input the max range's value of Array: ");
 int maxValueOfRange = Convert.ToInt32(ReadLine());
 
-int[] array = CreateArrarRndint(arrLength, minValueOfRange, maxValueOfRange);
+int[] array = CreateArrRndInt(arrLength, minValueOfRange, maxValueOfRange);
 int sumOfNonEvens = SumOfNonEvens(array);
 
 Write("[");

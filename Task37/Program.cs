@@ -4,7 +4,7 @@
 // [1 2 3 4 5] -> 5 8 3
 // [6 7 3 6] -> 36 21
 
-int[] CreateArrarRndint(int size, int min, int max)
+int[] CreateArrRndInt(int size, int min, int max)
 {
     int[] arr = new int[size];
     Random rnd = new Random();
@@ -38,7 +38,7 @@ void PrintOut(int[] arr)
     Console.WriteLine($"{arr[^1]}");// ^1 последний элемент массива
 }
 
-int[] randArr = CreateArrarRndint(6, 1, 10);
+int[] randArr = CreateArrRndInt(6, 1, 10);
 int[] resArr = ProductOfPairNumbers(randArr);
 PrintOut(randArr);
 Console.Write(" -> ");
