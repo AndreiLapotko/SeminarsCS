@@ -8,7 +8,7 @@ using System.Globalization; // необходимо для замены разд
 double[] CreateArrRndDouble(int size, int min, int max)
 {
     double[] arr = new double[size];
-    Random rnd = new Random();
+    Random rnd = new();
 
     for (int i = 0; i < size; i++)
     {
