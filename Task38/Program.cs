@@ -2,7 +2,7 @@
 // [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
 
 
-using static System.Console;
+using static System.Console; // использовал для сокращения записи операторов консольного ввода/вывода
 using System.Globalization; // необходимо для замены разделителя целой и дробной частей
 
 double[] CreateArrRndDouble(int size, int min, int max)
@@ -50,7 +50,7 @@ double GetMaxOfArr(double[] arr)
     return max;
 }
 
-CultureInfo.CurrentCulture = new CultureInfo("en-US"); // необходимо для замены разделителя целой и дробной частей
+CultureInfo.CurrentCulture = new CultureInfo("en-US"); // Переопределяем системные значения. Необходимо для замены разделителя целой и дробной частей.
 
 Write("Input the Length of Array: ");
 int arrLength = Convert.ToInt32(ReadLine());
@@ -62,6 +62,7 @@ int maxValueOfRange = Convert.ToInt32(ReadLine());
 double[] array = CreateArrRndDouble(arrLength, minValueOfRange, maxValueOfRange);
 double min = GetMinOfArr(array);
 double max = GetMaxOfArr(array);
+
 Write("[");
 PrintOut(array);
 //Write($"] => {max:f2} - {min:f2} = {max - min:f2}");
