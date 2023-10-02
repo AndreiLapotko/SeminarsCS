@@ -49,5 +49,5 @@ int countEvenNumbers = CountEvenNumbers(array);
 
 Write("[");
 PrintOut(array);
-Write("] => ");
+Write("] -> ");
 WriteLine(countEvenNumbers == 0 ? "No even numbers" : countEvenNumbers);
