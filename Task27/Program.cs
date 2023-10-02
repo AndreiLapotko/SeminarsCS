@@ -7,7 +7,7 @@ using static System.Console;
 
 int SumOfDigits(int num)
 {
-    int temp = 0;
+    int temp;
     int result = 0;
     if (num < 0) 
     {
@@ -18,7 +18,7 @@ int SumOfDigits(int num)
     for (int i = 0; temp > 0; i++)
     {
         result += temp % 10;
-        temp = temp / 10;
+        temp /= 10;
     }
     return result;
 }
