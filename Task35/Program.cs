@@ -10,7 +10,7 @@
 int[] CreateArrRndInt(int size, int min, int max)
 {
     int[] arr = new int[size];
-    Random rnd = new Random();
+    Random rnd = new();
 
     for (int i = 0; i < size; i++)
     {
