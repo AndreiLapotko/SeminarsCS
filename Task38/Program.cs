@@ -13,7 +13,7 @@ double[] CreateArrRndDouble(int size, int min, int max)
     for (int i = 0; i < size; i++)
     {
         // arr[i] = rnd.NextDouble() * (max - min) + min; //в цикле необходимо округление, т.к. без него возможна визуальная арифметическая ошибка при определении разности
-        arr[i] = Math.Round((rnd.NextDouble() * (max - min) + min), 2, MidpointRounding.AwayFromZero);
+        arr[i] = Math.Round(rnd.NextDouble() * (max - min) + min, 2, MidpointRounding.AwayFromZero);
     }
 
     return arr;
