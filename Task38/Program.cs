@@ -62,8 +62,9 @@ int maxValueOfRange = Convert.ToInt32(ReadLine());
 double[] array = CreateArrRndDouble(arrLength, minValueOfRange, maxValueOfRange);
 double min = GetMinOfArr(array);
 double max = GetMaxOfArr(array);
+double result = Math.Round(max - min, 2, MidpointRounding.AwayFromZero); // округление добавил после проверки
 
 Write("[");
 PrintOut(array);
 //Write($"] => {max:f2} - {min:f2} = {max - min:f2}");
-Write($"] => {max} - {min} = {max - min}");
+Write($"] => {max} - {min} = {result}");

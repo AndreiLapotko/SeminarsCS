@@ -44,7 +44,7 @@ void PrintOut(int[] arr)
 }
 
 int length = GetUserInput("Input the amount of numbers");
-int[] array = CreateArrarRndint(length, 100, 1000);
+int[] array = CreateArrarRndint(length, 100, 999);
 int countEvenNumbers = CountEvenNumbers(array);
 
 Write("[");
