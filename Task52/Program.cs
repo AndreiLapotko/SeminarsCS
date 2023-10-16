@@ -61,7 +61,6 @@ double [] FindAverageInColumns (int [,] matrix)
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
         double sum = 0;
-        // double average = 0;
         for (int i = 0; i < matrix.GetLength(0); i++)
         {
             sum += matrix[i, j];
