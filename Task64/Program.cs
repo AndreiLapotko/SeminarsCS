@@ -26,8 +26,7 @@ void CountDown(int n)
 {
     if (n == 0) return;
     Console.Write(n == 1? $"{n}\"" : $"{n}, ");
-    CountDown(n - 1);
-    
+    CountDown(n - 1);   
 }
 
 int n = GetUserInputInt("Введите натуральное число");

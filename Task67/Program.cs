@@ -10,7 +10,7 @@ int SumOfDigits(int n) //453 45 4 0
         // return 0 + 4 % 10 + 45 % 10 + 453 % 10 = 12
 }
 
-Console.WriteLine("Введите натуральное число");
+Console.Write("Введите натуральное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine(SumOfDigits(num)); 
